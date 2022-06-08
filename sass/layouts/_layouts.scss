@@ -1,0 +1,22 @@
+.header{
+    display: flex;
+    
+    & figure{
+        padding: 12px;
+        & img{
+            width: 220px;
+        }
+    }
+    &__icon{
+        font-size: 25px;
+        position: absolute;
+        top: 17px; left: 10px;
+        &:active{
+            color: rgb(126, 125, 125);
+        }
+        &--display{
+            display: none;
+        }
+    }
+}
+

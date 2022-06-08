@@ -1,17 +1,35 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 3 | @import "layouts/_layouts";
- *   |         ^^^^^^^^^^^^^^^^^^
- *   '
- *   sass\main.scss 3:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 3 \2502  @import \"layouts/_layouts\";\a   \2502          ^^^^^^^^^^^^^^^^^^\a   \2575 \a   sass\\main.scss 3:9  root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Shrikhand&display=swap");
+body {
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
 }
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+}
+.header figure {
+  padding: 12px;
+}
+.header figure img {
+  width: 220px;
+}
+.header__icon {
+  font-size: 25px;
+  position: absolute;
+  top: 17px;
+  left: 10px;
+}
+.header__icon:active {
+  color: rgb(126, 125, 125);
+}
+.header__icon--display {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
