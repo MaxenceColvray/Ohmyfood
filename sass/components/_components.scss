@@ -2,8 +2,13 @@
     font-size: 17px;
     font-weight: 400;
     color: white;
-    background-color: #B661DB;
     padding: 15px 25px;
     border-radius: 25px;
-    @include box-shadow-primary
+    @include button-primary;
+    &:hover{
+        @include button-hover;
+    }
+    &:active{
+        @include button-hover;
+    }
 }
