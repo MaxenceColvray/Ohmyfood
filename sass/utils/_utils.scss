@@ -5,3 +5,10 @@ $font-light: 300;
 $font-heavy: 500;
 
 $padding-size: (mobile:0 10px, desktop:0 15px);
+
+
+$bg-primary : #F6F6F6;
+
+@mixin box-shadow-primary {
+    box-shadow: 1px 4px 7px #a5a5a5;
+}

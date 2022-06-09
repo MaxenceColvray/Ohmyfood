@@ -1,6 +1,6 @@
 .header{
     display: flex;
-    
+    justify-content: center;
     & figure{
         padding: 12px;
         & img{
@@ -17,6 +17,33 @@
         &--display{
             display: none;
         }
+    }
+}
+
+.banner{
+    background-color: $bg-primary;
+    display: flex;
+    flex-direction: column;
+    &__location{
+        height: 48px;
+        background-color: #EAEAEA;
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+        font-weight: 500;
+        font-size: 17px;
+        color: #313131;
+        box-shadow: inset 0px 1.5px 3px #9e9e9e;;
+        & i{
+            margin: 0 15px;
+        }
+    }
+    &__titles{
+        height: 320px;
+        text-align: center;
+
+
+        
     }
 }
 
