@@ -1,9 +1,8 @@
 /*Start button call to action*/
 /*End button call to action*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
 body {
   font-family: "Roboto", Helvetica, sans-serif;
-  font-weight: 300;
   box-sizing: border-box;
 }
 
@@ -13,14 +12,24 @@ a {
 }
 
 h1 {
-  margin-top: 45px;
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 h2 {
-  margin-top: 20px;
-  margin-bottom: 65px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+h3 {
+  font-family: "Shrikhand", Helvetica, sans-serif;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
   font-size: 20px;
   font-weight: 300;
 }
@@ -28,7 +37,7 @@ h2 {
 .header {
   display: flex;
   justify-content: center;
-  box-shadow: 2px 1.5px 3px #9e9e9e;
+  box-shadow: 2px 1.5px 3px #a5a5a5;
   z-index: 9;
   position: relative;
 }
@@ -45,7 +54,7 @@ h2 {
   left: 10px;
 }
 .header__icon:active {
-  color: rgb(126, 125, 125);
+  color: #EAEAEA;
 }
 .header__icon--display {
   display: none;
@@ -53,8 +62,6 @@ h2 {
 
 .banner {
   background: #F6F6F6;
-  display: flex;
-  flex-direction: column;
 }
 .banner__location {
   height: 48px;
@@ -64,23 +71,33 @@ h2 {
   align-items: center;
   font-weight: 500;
   font-size: 17px;
-  color: #313131;
+  color: #353535;
 }
 .banner__location i {
   margin: 0 15px;
 }
 .banner__titles {
-  height: 320px;
+  height: 260px;
   text-align: center;
+}
+.banner__titles h1 {
+  margin-top: 50px;
+  padding: 0 10px;
+}
+.banner__titles h2 {
+  margin-top: 20px;
+  margin-bottom: 65px;
+  padding: 0 10px;
 }
 
 .fonctionnement {
-  margin: 0 10px;
+  margin: 0 15px;
+  padding-top: 45px;
 }
 .fonctionnement__box {
   margin-top: 30px;
   margin-bottom: 60px;
-  padding-left: 12px;
+  padding-left: 15px;
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -98,7 +115,7 @@ h2 {
   width: 22px;
   height: 22px;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 300;
   color: white;
   background: #9356DC;
   border-radius: 50%;
@@ -111,10 +128,110 @@ h2 {
 .fonctionnement__box__step i {
   margin: 0 30px;
   font-size: 20px;
-  color: #7D7D7D;
+  color: #7E7E7E;
 }
-.fonctionnement__box:hover i {
-  color: aqua;
+.fonctionnement__box__step:hover i {
+  color: #9356DC;
+}
+.fonctionnement__box__step .step_name {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.restaurants {
+  padding: 50px 0;
+  background: #F6F6F6;
+}
+.restaurants h1 {
+  margin: 0 15px;
+  margin-bottom: 15px;
+}
+.restaurants__card {
+  margin: 0 15px;
+  overflow: hidden;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background: #ffffff;
+  height: 285px;
+  border-radius: 20px;
+  box-shadow: 1px 4px 7px #a5a5a5;
+}
+.restaurants__card figure {
+  height: 200px;
+}
+.restaurants__card figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.restaurants__card figure .baner_new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 15px 0 auto;
+  background: #99e2d0;
+  color: #0a8d6d;
+  width: 100px;
+  height: 34px;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  bottom: 200px;
+}
+.restaurants__card figure .display_none {
+  display: none;
+}
+.restaurants__card__text {
+  display: flex;
+  margin: 20px 15px;
+}
+.restaurants__card__text i {
+  margin-left: auto;
+  font-size: 26px;
+  color: white;
+  -webkit-text-stroke: 1.5px black; /*bordure sur du texte*/
+}
+.restaurants__card__text i:hover {
+  -webkit-text-stroke: 0; /*suprime la bordure*/
+  background: linear-gradient(170deg, #FF79DA 0%, #9356DC 100%);
+  background-clip: text; /*appliquer un bg-color sur du texte*/
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.footer {
+  background: #353535;
+}
+
+footer {
+  background: #353535;
+}
+footer .container {
+  padding: 25px 0 30px 25px;
+}
+footer .container h3 {
+  color: white;
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+footer .container .list_footer {
+  padding-top: 25px;
+}
+footer .container .list_footer__item {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  color: white;
+  font-size: 18px;
+}
+footer .container .list_footer__item i {
+  width: 35px;
+}
+footer .container .list_footer__item--with_icon {
+  font-weight: 500;
 }
 
 .button_call_to_action {
@@ -134,5 +251,7 @@ h2 {
   background: linear-gradient(170deg, rgba(255, 121, 217, 0.85) 0%, rgba(146, 86, 220, 0.85) 100%);
   box-shadow: 1px 4px 7px #8c8c8c;
 }
+
+/**/
 
 /*# sourceMappingURL=style.css.map */

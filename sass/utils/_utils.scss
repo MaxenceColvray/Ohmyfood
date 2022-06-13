@@ -1,27 +1,33 @@
 $font-primary : "Roboto";
 $font-secondary: "Shrikhand";
-
 $font-light: 300;
-$font-heavy: 500;
+$font-middle: 500;
+$font-heavy: 700;
 
-$margin-size: (mobile:0 10px, desktop:0 15px);
+
 
 $color-primary:#9356DC;
 $color-secondary:#FF79DA;
 $color-tertiary:#99E2D0;
-
-$bg-primary : #F6F6F6;
-
+$grey1:#EAEAEA;
+$grey2:#7E7E7E;
+$grey3:#353535;
 $color-shadow:#a5a5a5;
+$bg-primary : #F6F6F6;
+$bg-items: #ffffff;
+
+$bg-baner-new:#99e2d0;
+$font-baner-new:#0a8d6d;
+
 @mixin box-shadow-primary {
     box-shadow: 1px 4px 7px $color-shadow;
 }
 
-/*Start button call to action*/
+$margin-size: (mobile:0 15px, desktop:0 20px);
 
+/*Start button call to action*/
 $color1-button-hover: rgba(255, 121, 217, 0.85);
 $color2-button-hover: rgba(146, 86, 220, 0.85);
-
 $bg-button: linear-gradient(170deg, $color-secondary 0%, $color-primary 100%);
 $bg-button-hover: linear-gradient(170deg, $color1-button-hover 0%, $color2-button-hover 100%);
 

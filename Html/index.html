@@ -27,7 +27,7 @@
       </div>
 
       <div class="banner__titles">
-        <h1>Réservez me menu qui vous convient</h1>
+        <h1>Réservez le menu qui vous convient</h1>
         <h2>Découvrez des restaurants d'exception, séléctionnés par nos soins</h2>
         <a href="#ancre_restaurants" class="button_call_to_action">Explorer nos restaurants</a>
       </div>
@@ -38,89 +38,96 @@
     <section class="fonctionnement">
       <h1>Fonctionnement</h1>
       <div class="fonctionnement__box">
-        <div class="fonctionnement__box__step" ><p class="number">1</p><i class="fa-solid fa-mobile-screen"></i><p>Choisissez un restaurant</p></div>
-        <div class="fonctionnement__box__step" ><p><span>2</span><i class="fa-solid fa-list"></i>Composez votre menu</p></div>
-        <div class="fonctionnement__box__step" ><p><span>3</span><i class="fa-solid fa-store"></i>Dégustez au restaurant</i></p></div>
+        <div class="fonctionnement__box__step" ><p class="number">1</p><i class="fa-solid fa-mobile-screen"></i><p class="step_name">Choisissez un restaurant</p></div>
+        <div class="fonctionnement__box__step" ><p class="number">2</p><i class="fa-solid fa-list"></i><p class="step_name">Composez votre menu</p></div>
+        <div class="fonctionnement__box__step" ><p class="number">3</p><i class="fa-solid fa-store"></i><p class="step_name">Dégustez au restaurant</p></div>
       </div>
     </section>
     <!-- End Fonctionnement -->
 
     <!-- Start Restaurants -->
-    <main class="restaurants_list">
+    <main class="restaurants">
       <h1 id="ancre_restaurants">Restaurants</h1>
-      <article>
+
+      <article class="restaurants__card">
       <a href="menu_la_palette_du_gout.html">
           <figure>
-            <img src=".../Assets/La palette du goût.jpg" alt="img La palette du goût">
+            <img src="../Assets/La palette du goût.jpg" alt="img La palette du goût">
+            <p class="baner_new">Nouveau</p>
           </figure>
-          <div>
+          <div class="restaurants__card__text">
             <div>
               <h5>La palette du goût</h5>
               <h6>Ménilmontant</h6>
             </div>
-              <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-heart"></i>
           </div>
       </a>
       </article>
 
-      <article>
+      <article class="restaurants__card">
         <a href="menu_la_note_enchantee.html">
             <figure>
-              <img src=".../Assets/La note enchantée.jpg" alt="img La note enchantée">
+              <img src="../Assets/La note enchantée.jpg" alt="img La note enchantée">
+              <p class="baner_new">Nouveau</p>
             </figure>
-            <div>
+            <div class="restaurants__card__text">
               <div>
                 <h5>La note enchantée</h5>
                 <h6>Charonne</h6>
               </div>
-                <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-heart"></i>
             </div>
         </a>
         </article>
 
-        <article>
+        <article class="restaurants__card">
           <a href="menu_a_la_francaise.html">
               <figure>
-                <img src=".../Assets/A la francaise.jpg" alt="img À la française">
+                <img src="../Assets/A la francaise.jpg" alt="img À la française">
+                <p class="baner_new display_none">Nouveau</p>
               </figure>
-              <div>
+              <div class="restaurants__card__text">
                 <div>
                   <h5>À la française</h5>
                   <h6>Cité rouge</h6>
                 </div>
-                  <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-heart"></i>
               </div>
           </a>
           </article>
 
-          <article>
+          <article class="restaurants__card">
             <a href="menu_le_delice_des_sens.html">
                 <figure>
-                  <img src=".../Assets/Le délice des sens.jpg" alt="img Le délice des sens">
+                  <img src="../Assets/Le délice des sens.jpg" alt="img Le délice des sens">
+                  <p class="baner_new display_none">Nouveau</p>
                 </figure>
-                <div>
+                <div class="restaurants__card__text">
                   <div>
                     <h5>Le délice des sens</h5>
                     <h6>Folie-Méricourt</h6>
                   </div>
-                    <i class="fa-regular fa-heart"></i>
+                  <i class="fa-solid fa-heart"></i>
                 </div>
             </a>
             </article>
+
     </main>
     <!-- End Restaurants -->
 
     <!-- Start Footer -->
     <footer>
-      <figure><img src=".../Assets/ohmyfood.png" alt="logo"></figure>
-      <div>
-        <i class="fa-solid fa-utensils"></i>
-        <a href="">Proposer un restaurant</a>
-      </div>
+      <div class="container">
+        <h3>ohmyfood</h3>
+        <div class="list_footer">
+          <a href="" class="list_footer__item list_footer__item--with_icon"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
+          <a href="" class="list_footer__item list_footer__item--with_icon"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
+          <a href="" class="list_footer__item">Mentions légales</a>
+          <a href="mailto:example@example.com" class="list_footer__item">contact</a>
+        </div>
 
-      <div>
-        <i class="fa-solid fa-handshake-angle"></i>
-        <a href="">Proposer un restaurant</a>
+        
       </div>
     </footer>
     <!-- End Footer -->
