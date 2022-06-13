@@ -23,6 +23,13 @@ h2 {
 
 h3 {
   font-family: "Shrikhand", Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 400;
 }
 
 h5 {
@@ -41,12 +48,6 @@ h6 {
   z-index: 9;
   position: relative;
 }
-.header figure {
-  padding: 12px;
-}
-.header figure img {
-  width: 220px;
-}
 .header__icon {
   font-size: 25px;
   position: absolute;
@@ -56,8 +57,14 @@ h6 {
 .header__icon:active {
   color: #EAEAEA;
 }
-.header__icon--display {
+.header__icon--display_none {
   display: none;
+}
+.header figure {
+  padding: 12px;
+}
+.header figure img {
+  width: 220px;
 }
 
 .banner {
@@ -74,7 +81,7 @@ h6 {
   color: #353535;
 }
 .banner__location i {
-  margin: 0 15px;
+  margin-right: 15px;
 }
 .banner__titles {
   height: 260px;
@@ -232,6 +239,69 @@ footer .container .list_footer__item i {
 }
 footer .container .list_footer__item--with_icon {
   font-weight: 500;
+}
+
+.main_img figure {
+  height: 300px;
+}
+.main_img figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu {
+  background: #F6F6F6;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  position: relative;
+  bottom: 50px;
+  padding: 0 15px;
+}
+.menu__title {
+  padding-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu__title i {
+  font-size: 25px;
+  margin-right: 18px;
+}
+.menu__box_items {
+  padding-top: 40px;
+}
+.menu__box_items__title {
+  width: 45px;
+  height: 25px;
+  border-bottom: solid 3px #99e2d0;
+  margin-bottom: 15px;
+}
+.menu__box_items__item {
+  margin: 10px 0;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 1px 4px 7px #a5a5a5;
+}
+.menu__box_items__item a {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px;
+}
+.menu__box_items__item a div p {
+  margin-top: 5px;
+  font-size: 17px;
+  font-weight: 400;
+}
+.menu__box_items__item a .price {
+  font-size: 17px;
+  font-weight: 700;
+}
+.menu__call_to_action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button_call_to_action {

@@ -3,19 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/normalize.css" />
-    <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <script src="https://kit.fontawesome.com/fb622a4c6b.js" crossorigin="anonymous"></script>
     <title>menu_la_palette_du_goût</title>
   </head>
   <body>
 
     <!-- Start header -->
-    <header>
-        <div>
-        <i class="fa-solid fa-arrow-left"></i>
-        </div>
-        <figure><img src="../Assets/ohmyfood.png" alt="logo"></figure>
+    <header class="header">
+        <a href="index.html" class="header__icon">
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+          <figure><img src="../Assets/ohmyfood.png" alt="logo"></figure>
     </header>
     <!-- End header -->
 
@@ -27,67 +27,145 @@
 
     <!-- Start Menu -->
     <main class="menu">
-        <div>
+        <div class="menu__title">
             <h3 class="name_restaurants">La palette du goût</h3>
             <i class="fa-regular fa-heart"></i>
         </div>
       
 
-        <div class="box_items">
-            <div>
+        <div class="menu__box_items">
+            <div class=menu__box_items__title>
                 <h4>ENTRÉES</h4>
             </div>
 
-            <article>
-                <a href="" class="item">
-                        <h5>Fricassée d'escargot</h5>
+            <article class="menu__box_items__item">
+                <a href="">
                     <div>
-                        <p>Au piment d'Espelette </p>
-                        <p class="price">25€</p>
+                        <h5>Fricassée d'escargot</h5>
+                        <p>Au piment d'Espelette</p>
                     </div>
+                        <p class="price">25€</p>
                 </a>
             </article>
 
-            <article>
-                <a href="" class="item">
-                        <h5>Fricassée d'escargot</h5>
+            <article class="menu__box_items__item">
+                <a href="">
                     <div>
-                        <p>Au piment d'Espelette </p>
-                        <p class="price">25€</p>
+                        <h5>Foie gras de canard mi-cuit</h5>
+                        <p>Et ses copeaux de truffe noire</p>
                     </div>
+                        <p class="price">35€</p>
                 </a>
             </article>
 
-            <article>
-                <a href="" class="item">
-                        <h5>Fricassée d'escargot</h5>
+            <article class="menu__box_items__item">
+                <a href="">
                     <div>
-                        <p>Au piment d'Espelette </p>
-                        <p class="price">25€</p>
+                        <h5>Oeuf au plat</h5>
+                        <p>Assaisonné à la truffe sur lit de caviar</p>
                     </div>
+                        <p class="price">20€</p>
                 </a>
             </article>
-
-            <a href="">Commander</a>
-
         </div>
-        <!-- End Menu -->
+
+        <div class="menu__box_items">
+            <div class=menu__box_items__title>
+                <h4>PLATS</h4>
+            </div>
+
+            <article class="menu__box_items__item">
+                <a href="">
+                    <div>
+                        <h5>Filet de boeuf aux herbes</h5>
+                        <p>Accompagné de sa ribambelle de légumes</p>
+                    </div>
+                        <p class="price">40€</p>
+                </a>
+            </article>
+
+            <article class="menu__box_items__item">
+                <a href="">
+                    <div>
+                        <h5>Parmentier de queue de boeuf</h5>
+                        <p>À la truffe noire sur sa purée de panais</p>
+                    </div>
+                        <p class="price">35€</p>
+                </a>
+            </article>
+
+            <article class="menu__box_items__item">
+                <a href="">
+                    <div>
+                        <h5>Filet de turbot</h5>
+                        <p>Aux agrumes</p>
+                    </div>
+                        <p class="price">44€</p>
+                </a>
+            </article>
+        </div>
+
+        <div class="menu__box_items">
+            <div class=menu__box_items__title>
+                <h4>DESSERTS</h4>
+            </div>
+
+            <article class="menu__box_items__item">
+                <a href="">
+                    <div>
+                        <h5>Paris-Brest</h5>
+                        <p>Revisité</p>
+                    </div>
+                        <p class="price">18€</p>
+                </a>
+            </article>
+
+            <article class="menu__box_items__item">
+                <a href="">
+                    <div>
+                        <h5>Macaron au chocolat d'exception</h5>
+                        <p>Et glace à la vanille de Madagascar</p>
+                    </div>
+                        <p class="price">22€</p>
+                </a>
+            </article>
+
+            <article class="menu__box_items__item">
+                <a href="">
+                    <div>
+                        <h5>Mousse au chocolat</h5>
+                        <p>Au piment d'Espelette et à la truffe noire</p>
+                    </div>
+                        <p class="price">23€</p>
+                </a>
+            </article>
+        </div>
+           
+        <div class="menu__call_to_action">
+            <a href="" class="button_call_to_action">Commander</a>
+        </div>
+        
+        
+
+    </main>
+    <!-- End Menu -->
 
 
     <!-- Start Footer -->
     <footer>
-      <figure><img src="../Assets/ohmyfood.png" alt="logo"></figure>
-      <div>
-        <i class="fa-solid fa-utensils"></i>
-        <a href="">Proposer un restaurant</a>
-      </div>
-
-      <div>
-        <i class="fa-solid fa-handshake-angle"></i>
-        <a href="">Proposer un restaurant</a>
-      </div>
-    </footer>
-    <!-- End Footer -->
+        <div class="container">
+          <h3>ohmyfood</h3>
+          <div class="list_footer">
+            <a href="" class="list_footer__item list_footer__item--with_icon"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
+            <a href="" class="list_footer__item list_footer__item--with_icon"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
+            <a href="" class="list_footer__item">Mentions légales</a>
+            <a href="mailto:example@example.com" class="list_footer__item">contact</a>
+          </div>
+  
+          
+        </div>
+      </footer>
+      <!-- End Footer -->
 
   </body>
 </html>

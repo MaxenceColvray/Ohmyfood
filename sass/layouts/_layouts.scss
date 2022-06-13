@@ -4,12 +4,6 @@
     box-shadow: 2px 1.5px 3px $color-shadow;
     z-index: 9;
     position: relative;
-    & figure{
-        padding: 12px;
-        & img{
-            width: 220px;
-        }
-    }
     &__icon{
         font-size: 25px;
         position: absolute;
@@ -17,8 +11,14 @@
         &:active{
             color: $grey1;
         }
-        &--display{
+        &--display_none{
             display: none;
+        }
+    }
+    & figure{
+        padding: 12px;
+        & img{
+            width: 220px;
         }
     }
 }
@@ -35,7 +35,7 @@
         font-size: 17px;
         color: $grey3;
         & i{
-            margin: 0 15px;
+            margin-right:15px;
         }
     }
     &__titles{
@@ -198,5 +198,72 @@ footer{
                 }
             }
         }
+    }
+}
+
+.main_img{
+    & figure{
+        height: 300px;
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.menu{
+    background: $bg-primary;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    position: relative;
+    bottom: 50px;
+    padding: map-get($padding-size,mobile);
+    &__title{
+        padding-top: 35px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        i{
+            font-size: 25px;
+            margin-right: 18px;
+        }
+    }
+    &__box_items{
+        padding-top: 40px;
+        &__title{
+            width: 45px;
+            height: 25px;
+            border-bottom: solid 3px $bg-baner-new;
+            margin-bottom: 15px;
+        }
+        &__item{
+            margin: 10px 0;
+            background: white;
+            border-radius: 15px;
+            @include box-shadow-primary;
+            a{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                padding: 10px;
+                div{
+                    p{
+                        margin-top: 5px;
+                        font-size: 17px;
+                        font-weight: 400;
+                    }
+                }
+                .price{
+                    font-size: 17px;
+                    font-weight: $font-heavy;
+                }
+            }
+        }
+    }
+    &__call_to_action{
+        display: flex;
+    justify-content: center;
+    align-items: center;
     }
 }
