@@ -197,9 +197,12 @@ h6 {
   margin-left: auto;
   font-size: 26px;
   color: white;
+  transform-origin: 100%;
   -webkit-text-stroke: 1.5px black; /*bordure sur du texte*/
 }
 .restaurants__card__text i:hover {
+  font-size: 28px;
+  transition: color 800ms ease;
   -webkit-text-stroke: 0; /*suprime la bordure*/
   background: linear-gradient(170deg, #FF79DA 0%, #9356DC 100%);
   background-clip: text; /*appliquer un bg-color sur du texte*/
@@ -279,24 +282,50 @@ footer .container .list_footer__item--with_icon {
 }
 .menu__box_items__item {
   margin: 10px 0;
+  height: 72px;
   background: white;
   border-radius: 15px;
+  overflow: hidden;
   box-shadow: 1px 4px 7px #a5a5a5;
-}
-.menu__box_items__item a {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 10px;
+  align-items: center;
 }
-.menu__box_items__item a div p {
+.menu__box_items__item div {
+  width: 60%;
+  margin-left: 12px;
+}
+.menu__box_items__item div h5, .menu__box_items__item div p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu__box_items__item div p {
   margin-top: 5px;
   font-size: 17px;
   font-weight: 400;
 }
-.menu__box_items__item a .price {
+.menu__box_items__item .price {
   font-size: 17px;
   font-weight: 700;
+  margin: auto 12px 12px auto;
+}
+.menu__box_items__item .item__anime {
+  width: 0px;
+  height: 100%;
+  background: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: width 500ms ease;
+}
+.menu__box_items__item .item__anime i {
+  font-size: 22px;
+  color: white;
+}
+.menu__box_items__item:hover .item__anime {
+  width: 62px;
+  transition: width 500ms ease;
 }
 .menu__call_to_action {
   display: flex;

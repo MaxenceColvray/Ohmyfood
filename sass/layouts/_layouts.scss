@@ -153,8 +153,13 @@
                 margin-left: auto;
                 font-size: 26px;
                 color: white;
+                transform-origin: 100%;
+                
+                
                 -webkit-text-stroke: 1.5px black;/*bordure sur du texte*/
                 &:hover{
+                    font-size: 28px;
+                    transition: color 800ms ease;
                     -webkit-text-stroke:0;/*suprime la bordure*/
                     background: $bg-button;
                     background-clip:text;/*appliquer un bg-color sur du texte*/
@@ -239,24 +244,53 @@ footer{
         }
         &__item{
             margin: 10px 0;
+            height: 72px;
             background: white;
             border-radius: 15px;
+            overflow: hidden;
             @include box-shadow-primary;
-            a{
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-end;
-                padding: 10px;
-                div{
-                    p{
-                        margin-top: 5px;
-                        font-size: 17px;
-                        font-weight: 400;
-                    }
+            display: flex;
+            align-items: center;
+            div{
+                width: 60%;
+                margin-left: 12px;
+                h5, p{
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
                 }
-                .price{
+                p{
+                    margin-top: 5px;
                     font-size: 17px;
-                    font-weight: $font-heavy;
+                    font-weight: 400;
+                }
+            }
+            .price{
+                font-size: 17px;
+                font-weight: $font-heavy;
+                margin:auto 12px 12px auto;
+            }
+            .item__anime{   
+                width: 0px; 
+                height: 100%;
+                background: $color-tertiary;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                transition: width 500ms ease;
+                i{
+                    font-size: 22px;
+                    color: white;
+                }
+            }
+            &:hover{
+                .item__anime{
+                    width: 62px;
+                    transition: width 500ms ease;
+                    
+                    
+                
                 }
             }
         }
