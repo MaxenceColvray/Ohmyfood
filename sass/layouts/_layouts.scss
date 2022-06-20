@@ -1,3 +1,4 @@
+
 /*Start page d'accueil*/
 .loading_page{
     width: 100%;
@@ -65,7 +66,7 @@
 }
 
 .fonctionnement{
-    margin: map-get($margin-size, mobile );
+    padding: map-get($padding-size, mobile );
     padding-top: 45px;
     &__box{
         margin-top: 30px;
@@ -123,23 +124,25 @@
         margin: map-get($margin-size, mobile );
         margin-bottom: 15px;
     }
-    &__card{
-        margin: map-get($margin-size, mobile );
-        overflow: hidden;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        background: $bg-items;
-        height: 285px;
-        border-radius: 20px;
-        @include box-shadow-primary;
-        & figure{
-            height: 200px;
-            & img{
-                width:100%;
-                height: 100%;
-                object-fit: cover;
-            }
-            .baner_new{
+    &__box{
+    
+        &__card{
+            margin: map-get($margin-size, mobile );
+            overflow: hidden;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            background: $bg-items;
+            height: 285px;
+            border-radius: 20px;
+            @include box-shadow-primary;
+            & figure{
+                height: 200px;
+                & img{
+                    width:100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                .baner_new{
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -153,29 +156,30 @@
                 font-weight: $font-heavy;
                 position: relative;
                 bottom: 200px;
+                }
+                .display_none{
+                    display: none;
+                }
             }
-            .display_none{
-                display: none;
-            }
-        }
-        &__text{
-            display: flex;
-            margin: 20px 15px;
-            & i{
-                margin-left: auto;
-                font-size: 26px;
-                color: white;
-                -webkit-text-stroke: 1.5px black;/*bordure sur du texte*/
-                transform: scale(1);
-                transform-origin: 50% 50% ;
-                &:hover{
-                    transform: scale(1.3);
-                    transition: 500ms ease-in;
-                    background: $bg-button;
-                    -webkit-text-stroke:0;
-                    color: transparent;
-                    background-clip:text;
-                    -webkit-background-clip:text;
+            &__text{
+                display: flex;
+                margin: 20px 15px;
+                & i{
+                    margin-left: auto;
+                    font-size: 26px;
+                    color: white;
+                    -webkit-text-stroke: 1.5px black;/*bordure sur du texte*/
+                    transform: scale(1);
+                    transform-origin: 50% 50% ;
+                    &:hover{
+                        transform: scale(1.3);
+                        transition: 500ms ease-in;
+                        background: $bg-button;
+                        -webkit-text-stroke:0;
+                        color: transparent;
+                        background-clip:text;
+                        -webkit-background-clip:text;
+                    }
                 }
             }
         }
@@ -203,8 +207,8 @@
     background: $bg-primary;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    padding: map-get($padding-size,mobile);
     &__title{
+        padding: map-get($padding-size, mobile );
         padding-top: 35px;
         display: flex;
         justify-content: space-between;
@@ -214,7 +218,8 @@
             margin-right: 18px;
         }
     }
-    &__box_items{        
+    &__box_items{
+        padding: map-get($padding-size, mobile );        
         padding-top: 40px;
         &__title{
             width: 45px;
@@ -271,10 +276,7 @@
                     & i{
                         transform: rotate(1turn);
                         transition: 500ms ease;
-                    }
-                
-                    
-                    
+                    }  
                 
                 }
             }
@@ -289,6 +291,51 @@
 }
 /*End page des menus*/
 
+
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .fonctionnement{
+        width: 700px;
+    }
+    .restaurants__box{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    
+        .restaurants__box__card{
+            width: 45%;
+            margin: 15px 0;
+
+        }
+    }
+}
+
+@media (min-width:768px) {
+
+    .fonctionnement{
+        width: 700px;
+    }
+    .restaurants__box{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    
+        .restaurants__box__card{
+            width: 45%;
+            margin: 15px 0;
+        }
+    }
+    .menu__box_items{
+        width: 45%;
+    }
+    .test{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+}
 
 
 

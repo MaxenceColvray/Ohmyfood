@@ -10,22 +10,23 @@
   </head>
   <body>
 
-    <!-- Start loading -->
-    <div class="loading_page">
-      <div class="loading_page__spinner"></div>
-      <div class="loading_page__text"><p>Chargement...</p></div>
-    </div>
-    <!--  End loading -->
-  
+   <!-- Start loading 
+   <div class="loading_page">
+    <div class="loading_page__spinner"></div>
+    <div class="loading_page__text"><p>Chargement...</p></div>
+  </div>
+    End loading -->
 
     <!-- Start header -->
     <header class="header">
-      <a href="index.html" class="header__icon header__icon--display_none">
-        <i class="fa-solid fa-arrow-left"></i>
-      </a>
-      <figure><img src="../Assets/ohmyfood.png" alt="logo"></figure>
+      <div class="box_header">
+      <a href="index.html" class="box_header__icon box_header__icon box_header__icon--display_none">
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        <figure><img src="../Assets/ohmyfood.png" alt="logo"></figure>
+      </div>
   </header>
-    <!-- End header -->
+  <!-- End header -->
 
     <!-- Start Banner -->
     <section class="banner">
@@ -57,13 +58,14 @@
     <main class="restaurants">
       <h1 id="ancre_restaurants">Restaurants</h1>
 
-      <article class="restaurants__card">
+      <div class="restaurants__box">
+      <article class="restaurants__box__card">
       <a href="menu_la_palette_du_gout.html">
           <figure>
             <img src="../Assets/La palette du goût.jpg" alt="img La palette du goût">
             <p class="baner_new">Nouveau</p>
           </figure>
-          <div class="restaurants__card__text">
+          <div class="restaurants__box__card__text">
             <div>
               <h5>La palette du goût</h5>
               <h6>Ménilmontant</h6>
@@ -73,13 +75,13 @@
       </a>
       </article>
 
-      <article class="restaurants__card">
+      <article class="restaurants__box__card">
         <a href="menu_la_note_enchantee.html">
             <figure>
               <img src="../Assets/La note enchantée.jpg" alt="img La note enchantée">
               <p class="baner_new">Nouveau</p>
             </figure>
-            <div class="restaurants__card__text">
+            <div class="restaurants__box__card__text">
               <div>
                 <h5>La note enchantée</h5>
                 <h6>Charonne</h6>
@@ -89,13 +91,13 @@
         </a>
         </article>
 
-        <article class="restaurants__card">
+        <article class="restaurants__box__card">
           <a href="menu_a_la_francaise.html">
               <figure>
                 <img src="../Assets/A la francaise.jpg" alt="img À la française">
                 <p class="baner_new display_none">Nouveau</p>
               </figure>
-              <div class="restaurants__card__text">
+              <div class="restaurants__box__card__text">
                 <div>
                   <h5>À la française</h5>
                   <h6>Cité rouge</h6>
@@ -105,13 +107,13 @@
           </a>
           </article>
 
-          <article class="restaurants__card">
+          <article class="restaurants__box__card">
             <a href="menu_le_delice_des_sens.html">
                 <figure>
                   <img src="../Assets/Le délice des sens.jpg" alt="img Le délice des sens">
                   <p class="baner_new display_none">Nouveau</p>
                 </figure>
-                <div class="restaurants__card__text">
+                <div class="restaurants__box__card__text">
                   <div>
                     <h5>Le délice des sens</h5>
                     <h6>Folie-Méricourt</h6>
@@ -120,6 +122,7 @@
                 </div>
             </a>
             </article>
+          </div>
 
     </main>
     <!-- End Restaurants -->
@@ -127,9 +130,9 @@
 
     <!-- Start Footer -->
     <footer>
-      <div class="container">
+      <div class="footer_container">
         <h3>ohmyfood</h3>
-        <div class="list_footer">
+        <div class="list__footer">
           <a href="" class="list_footer__item list_footer__item--with_icon"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
           <a href="" class="list_footer__item list_footer__item--with_icon"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a>
           <a href="" class="list_footer__item">Mentions légales</a>

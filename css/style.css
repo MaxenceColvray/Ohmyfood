@@ -45,6 +45,11 @@ body {
   box-sizing: border-box;
 }
 
+.box_header, .fonctionnement, .restaurants, .footer_container, .menu {
+  max-width: 1400px;
+  margin: auto;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -80,30 +85,32 @@ h6 {
   font-weight: 300;
 }
 
-.header {
-  height: 66px;
-  display: flex;
-  justify-content: center;
+header {
   box-shadow: 2px 1.5px 3px #a5a5a5;
   z-index: 9;
   position: relative;
 }
-.header__icon {
-  font-size: 25px;
-  position: absolute;
-  top: 17px;
-  left: 10px;
+header .box_header {
+  max-width: 1400px;
+  margin: auto;
+  height: 66px;
+  display: flex;
+  justify-content: center;
 }
-.header__icon:active {
+header .box_header__icon {
+  font-size: 23px;
+  margin: auto 0 auto 15px;
+}
+header .box_header__icon:active {
   color: #EAEAEA;
 }
-.header__icon--display_none {
+header .box_header__icon--display_none {
   display: none;
 }
-.header figure {
+header .box_header figure {
   margin: auto;
 }
-.header figure img {
+header .box_header figure img {
   width: 220px;
 }
 
@@ -170,7 +177,7 @@ h6 {
 }
 
 .fonctionnement {
-  margin: 0 15px;
+  padding: 0 15px;
   padding-top: 45px;
 }
 .fonctionnement__box {
@@ -228,7 +235,7 @@ h6 {
   margin: 0 15px;
   margin-bottom: 15px;
 }
-.restaurants__card {
+.restaurants__box__card {
   margin: 0 15px;
   overflow: hidden;
   margin-top: 15px;
@@ -238,15 +245,15 @@ h6 {
   border-radius: 20px;
   box-shadow: 1px 4px 7px #a5a5a5;
 }
-.restaurants__card figure {
+.restaurants__box__card figure {
   height: 200px;
 }
-.restaurants__card figure img {
+.restaurants__box__card figure img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.restaurants__card figure .baner_new {
+.restaurants__box__card figure .baner_new {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -261,14 +268,14 @@ h6 {
   position: relative;
   bottom: 200px;
 }
-.restaurants__card figure .display_none {
+.restaurants__box__card figure .display_none {
   display: none;
 }
-.restaurants__card__text {
+.restaurants__box__card__text {
   display: flex;
   margin: 20px 15px;
 }
-.restaurants__card__text i {
+.restaurants__box__card__text i {
   margin-left: auto;
   font-size: 26px;
   color: white;
@@ -276,7 +283,7 @@ h6 {
   transform: scale(1);
   transform-origin: 50% 50%;
 }
-.restaurants__card__text i:hover {
+.restaurants__box__card__text i:hover {
   transform: scale(1.3);
   transition: 500ms ease-in;
   background: linear-gradient(170deg, #FF79DA 0%, #9356DC 100%);
@@ -304,9 +311,9 @@ h6 {
   background: #F6F6F6;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  padding: 0 15px;
 }
 .menu__title {
+  padding: 0 15px;
   padding-top: 35px;
   display: flex;
   justify-content: space-between;
@@ -317,6 +324,7 @@ h6 {
   margin-right: 18px;
 }
 .menu__box_items {
+  padding: 0 15px;
   padding-top: 40px;
 }
 .menu__box_items__title {
@@ -384,22 +392,58 @@ h6 {
 }
 
 /*End page des menus*/
+@media (min-width: 768px) and (max-width: 992px) {
+  .fonctionnement {
+    width: 700px;
+  }
+  .restaurants__box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .restaurants__box .restaurants__box__card {
+    width: 45%;
+    margin: 15px 0;
+  }
+}
+@media (min-width: 768px) {
+  .fonctionnement {
+    width: 700px;
+  }
+  .restaurants__box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .restaurants__box .restaurants__box__card {
+    width: 45%;
+    margin: 15px 0;
+  }
+  .menu__box_items {
+    width: 45%;
+  }
+  .test {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 footer {
   background: #353535;
 }
-footer .container {
+footer .footer_container {
   padding: 25px 0 30px 25px;
 }
-footer .container h3 {
+footer .footer_container h3 {
   color: white;
   font-size: 22px;
   letter-spacing: 1px;
   font-weight: 300;
 }
-footer .container .list_footer {
+footer .footer_container .list_footer {
   padding-top: 25px;
 }
-footer .container .list_footer__item {
+footer .footer_container .list_footer__item {
   width: fit-content;
   display: flex;
   align-items: center;
@@ -407,10 +451,10 @@ footer .container .list_footer__item {
   color: white;
   font-size: 18px;
 }
-footer .container .list_footer__item i {
+footer .footer_container .list_footer__item i {
   width: 35px;
 }
-footer .container .list_footer__item--with_icon {
+footer .footer_container .list_footer__item--with_icon {
   font-weight: 500;
 }
 

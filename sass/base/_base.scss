@@ -5,6 +5,12 @@ body {
     box-sizing: border-box;
   }
 
+.box_header, .fonctionnement, .restaurants, .footer_container, .menu{
+  max-width: 1400px;
+  margin: auto;
+}
+
+
   a {
     color: black;
     text-decoration: none;
