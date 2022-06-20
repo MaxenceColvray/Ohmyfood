@@ -4,14 +4,13 @@ $font-light: 300;
 $font-middle: 500;
 $font-heavy: 700;
 
-
-
 $color-primary:#9356DC;
 $color-secondary:#FF79DA;
 $color-tertiary:#99E2D0;
 $grey1:#EAEAEA;
 $grey2:#7E7E7E;
 $grey3:#353535;
+$purple:#F5EDFF;
 $color-shadow:#a5a5a5;
 $bg-primary : #F6F6F6;
 $bg-items: #ffffff;
@@ -42,3 +41,56 @@ $bg-button-hover: linear-gradient(170deg, $color1-button-hover 0%, $color2-butto
     box-shadow: 1px 4px 7px darken($color: $color-shadow, $amount: 10%);
 }
 /*End button call to action*/
+
+
+/*Start Loading spinner*/
+@keyframes loading_spinner {
+    from{     
+    }
+    to{
+        transform: rotate(1turn);
+   
+    }
+}
+
+
+@keyframes display_loading_spinner {
+    from{
+        transform: scale(1);
+
+    }
+    to{
+
+        transform: scale(0);
+    }
+    
+}
+/*End Loading spinner*/
+
+
+/*Start anime_box_item*/
+@keyframes anime_box_item {
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+
+    }
+}
+
+.display_anime1{
+    animation: anime_box_item 1s  0s backwards;
+}
+
+.display_anime2{ 
+    animation: anime_box_item 1s  0.7s backwards;
+}
+
+.display_anime3{
+    animation: anime_box_item 1s 1.4s backwards;
+}
+/*End anime_box_item*/

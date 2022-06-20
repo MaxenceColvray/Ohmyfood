@@ -1,0 +1,29 @@
+footer{
+    background: $grey3;
+    & .container{
+        padding: 25px 0 30px 25px;
+        & h3{
+            color: white;
+            font-size: 22px;
+            letter-spacing: 1px;
+            font-weight: $font-light;
+        }
+        & .list_footer{
+            padding-top: 25px;
+            &__item{
+                width: fit-content;
+                display: flex;
+                align-items: center;
+                margin: 10px 0;
+                color: white;
+                font-size: 18px;
+                & i{
+                    width: 35px;
+                }
+                &--with_icon{
+                    font-weight: $font-middle;
+                }
+            }
+        }
+    }
+}
