@@ -392,20 +392,6 @@ header .box_header figure img {
 }
 
 /*End page des menus*/
-@media (min-width: 768px) and (max-width: 992px) {
-  .fonctionnement {
-    width: 700px;
-  }
-  .restaurants__box {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  .restaurants__box .restaurants__box__card {
-    width: 45%;
-    margin: 15px 0;
-  }
-}
 @media (min-width: 768px) {
   .fonctionnement {
     width: 700px;
@@ -422,7 +408,7 @@ header .box_header figure img {
   .menu__box_items {
     width: 45%;
   }
-  .test {
+  .box {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;

@@ -13,7 +13,6 @@
     opacity: 0.9;
     flex-direction: column;
     
-    
     &__spinner{
         margin: 100px auto 0 auto;
         width: 120px;
@@ -293,24 +292,6 @@
 
 
 
-
-@media (min-width: 768px) and (max-width: 992px) {
-    .fonctionnement{
-        width: 700px;
-    }
-    .restaurants__box{
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    
-        .restaurants__box__card{
-            width: 45%;
-            margin: 15px 0;
-
-        }
-    }
-}
-
 @media (min-width:768px) {
 
     .fonctionnement{
@@ -329,12 +310,11 @@
     .menu__box_items{
         width: 45%;
     }
-    .test{
+    .box{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
-
 }
 
 
